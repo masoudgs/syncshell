@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 import os
 
@@ -30,9 +29,8 @@ SUPPORTED_SHELLS = {
 }
 SHELL = os.path.basename(os.environ.get("SHELL", "bash"))
 SHELL_HISTORY_PATH = os.path.join(USER_HOME, SUPPORTED_SHELLS[SHELL])
-HELP_MESSAGE = (
-    "If you don't have Github token key, "
-    "Please, first go to "
-    f"{WHITE}{BOLD}https://github.com/settings/tokens{NORMAL} "
-    "address create a personal access token with gist scope."
+AUTH_MESSAGE = (
+    "Enter GitHub token (Visit https://github.com/settings/tokens to generate one)."
 )
+TOKEN_INPUT = "Token: "
+GIST_ID_INPUT = "Gist Id: "

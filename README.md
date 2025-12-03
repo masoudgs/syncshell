@@ -5,8 +5,8 @@
     alt="MIT License" />
 </a>
 <!-- Build Status -->
-<a href="https://github.com/msudgh/syncshell/actions/workflows/test.yaml">
-  <img src="https://github.com/msudgh/syncshell/actions/workflows/test.yaml/badge.svg?branch=main"
+<a href="https://github.com/msudgh/syncshell/actions/workflows/tests.yaml">
+  <img src="https://github.com/msudgh/syncshell/actions/workflows/tests.yaml/badge.svg?branch=main"
     alt="Build Status" />
 </a>
 <!-- Releases -->
@@ -71,23 +71,30 @@ Usage:       syncshell
 
 ## How it Works
 
-SyncShell is a tool that synchronizes shell history across all devices by securely storing the history file on Github Gist. Github Gist provides two types of Gists, `public` and `secret`. When the `syncshell upload` command is executed, the shell history file is uploaded and stored securely on Github Gist as a secret Gist. To download the uploaded shell history on other devices, the `syncshell download` command is used. This command retrieves the previously uploaded Gist, allowing the user to access their shell history on any device.
+SyncShell syncs shell history across devices by storing it on Github Gist. It uploads the history as a secret Gist with `syncshell upload` and retrieves it with `syncshell download`.
 
 **Security:** A Gist will be secret until it's not shared and will be secret and safe until you only have the Github Token and Gist ID.
 
-**Privacy:** In case of having password or secret in a history file, Its suggested to first have a alignment with privacy policies for any usecase.
+**Privacy:** In case of having password or secret in a history file, Its suggested to first have a alignment with privacy policies for any use case.
 
 ## Contributing
 
-I would love to have your help in making SyncShell idea better and expand it capabilities.
+Any interest of contribution is welcome. Feel free to send a PR, report a bug, or request a feature. Below are the guidelines to contribute to the project.
+
+### Development
+
+- Python 3.6+ is required.
+- Install [poetry](https://python-poetry.org/docs/#installation) as a dependency manager.
+- Install dependencies by running ```poetry shell && poetry install```
+- Run and debug your changes by running ```poetry run python syncshell```
 
 ### Branching
 
 - `main` is being used for the latest development version.
 - `release` is being used for the latest stable version.
 
-
 ### Pull Requests
+
 To contribute follow the below steps:
 
 1. Install [poetry](https://python-poetry.org/docs/#installation) as a dependency manager
@@ -98,4 +105,5 @@ To contribute follow the below steps:
 6. Submit a pull request
 
 ## License
-The code is licensed under the MIT License. See the data's [LICENSE](https://github.com/msudgh/syncshell/blob/main/LICENSE) file for more information.
+
+The code is licensed under the MIT License. Visit [LICENSE](https://github.com/msudgh/syncshell/blob/main/LICENSE) file for more information.
