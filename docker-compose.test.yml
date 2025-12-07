@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  syncshell-test:
+    image: python:3.12-slim
+    container_name: syncshell-test
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: >
+      bash -c "
+        pip install --upgrade pip &&
+        pip install syncshell &&
+        echo '=== Testing syncshell installation ===' &&
+        syncshell --help &&
+        echo '' &&
+        echo '=== Verifying syncshell commands are available ===' &&
+        python -c 'import syncshell; print(\"syncshell module imported successfully\")' &&
+        echo '=== All tests passed successfully ==='
+      "
+    environment:
+      - PYTHONUNBUFFERED=1

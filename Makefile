@@ -1,4 +1,4 @@
-.PHONY: help install lint lint-fix format test test-cov clean
+.PHONY: help install lint lint-fix format test test-cov test-docker clean
 
 help:
 	@echo "Available commands:"
@@ -7,6 +7,7 @@ help:
 	@echo "  make format      Format code (ruff format)"
 	@echo "  make test        Run tests with pytest"
 	@echo "  make test-cov    Run tests with coverage"
+	@echo "  make test-docker Test syncshell installation via pip in Docker"
 	@echo "  make clean       Remove build artifacts and cache files"
 
 install:
@@ -26,6 +27,11 @@ test:
 
 test-cov:
 	poetry run pytest --cov=syncshell --cov-report=html --cov-report=term
+
+test-docker:
+	@echo "Running Docker Compose test for syncshell..."
+	docker-compose -f docker-compose.test.yml up --abort-on-container-exit --exit-code-from syncshell-test
+	docker-compose -f docker-compose.test.yml down
 
 clean:
 	find . -type d -name __pycache__ -exec rm -rf {} + 2>/dev/null || true
