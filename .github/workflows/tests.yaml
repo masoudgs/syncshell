@@ -8,8 +8,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.8.18", "3.11.3"]
-        poetry-version: ["1.5.1"]
+        python-version: ["3.12.x", "3.15.x"]
+        poetry-version: ["1.8.3"]
     steps:
       - uses: actions/checkout@v3
       # Poetry cache depends on OS, Python version and Poetry version.
