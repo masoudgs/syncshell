@@ -1,24 +1,6 @@
 # SyncShell
-<!-- License -->
-<a href="https://mit-license.org/msudgh">
-  <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg"
-    alt="MIT License" />
-</a>
-<!-- Build Status -->
-<a href="https://github.com/msudgh/syncshell/actions/workflows/tests.yaml">
-  <img src="https://github.com/msudgh/syncshell/actions/workflows/tests.yaml/badge.svg?branch=main"
-    alt="Build Status" />
-</a>
-<!-- Releases -->
-<a href="https://github.com/msudgh/syncshell/releases">
-  <img src="https://img.shields.io/github/release/msudgh/syncshell.svg"
-    alt="PyPi" />
-</a>
-<!-- PyPi -->
-<a href="https://pypi.org/project/syncshell/">
-  <img src="https://img.shields.io/pypi/v/syncshell.svg"
-    alt="PyPi" />
-</a>
+
+[![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://mit-license.org/masoudgs) [![Build Status](https://github.com/masoudgs/syncshell/actions/workflows/tests.yaml/badge.svg?branch=main)](https://github.com/masoudgs/syncshell/actions/workflows/tests.yaml) [![PyPi](https://img.shields.io/github/release/masoudgs/syncshell.svg)](https://github.com/masoudgs/syncshell/releases) [![PyPi](https://img.shields.io/pypi/v/syncshell.svg)](https://pypi.org/project/syncshell/)
 
 SyncShell as a simple and secure tool allows to synchronize machine's shell history across devices. It's built on top of Github Gist and written in Python (CLI). With SyncShell, you no longer have to worry about manually syncing your office and home machine's shell history and let continue where the terminal session left.
 
@@ -107,4 +89,4 @@ To contribute follow the below steps:
 
 ## License
 
-The code is licensed under the MIT License. Visit [LICENSE](https://github.com/msudgh/syncshell/blob/main/LICENSE) file for more information.
+The code is licensed under the MIT License. Visit [LICENSE](https://github.com/masoudgs/syncshell/blob/main/LICENSE) file for more information.

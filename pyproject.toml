@@ -5,8 +5,8 @@ description = "Keep your machine's shell history synchronized"
 license = "MIT"
 authors = ["Masoud Ghorbani <masoudghorbani@pm.me>"]
 readme = "README.md"
-repository = "https://github.com/msudgh/syncshell"
-homepage = "https://github.com/msudgh/syncshell"
+repository = "https://github.com/masoudgs/syncshell"
+homepage = "https://github.com/masoudgs/syncshell"
 keywords = ["sync", "shell", "history", "bash", "zsh"]
 include = [
     { path = ".syncshell.ini", format = "wheel" },
