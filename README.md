@@ -30,13 +30,15 @@ SyncShell as a simple and secure tool allows to synchronize machine's shell hist
 - Easy to install and use
 
 ## Installation
+
 To install SyncShell, simply run the following command:
 
 ```bash
-$ pip install syncshell
+pip install syncshell
 ```
 
 ## Usage
+
 To use SyncShell, It first needs to set up a Github token key by following these steps:
 
 1. Open [**Github personal access tokens**](https://github.com/settings/tokens) page, [**Generate a new token**](https://github.com/settings/tokens/new) with `gist` scope feature.
@@ -45,15 +47,14 @@ To use SyncShell, It first needs to set up a Github token key by following these
 Once finished, try to upload shell history by the following command:
 
 ```bash
-$ syncshell upload
+syncshell upload
 ```
 
 After uploading, the download command lets to sync and pull changes on the other machines:
 
 ```bash
-$ syncshell download
+syncshell download
 ```
-
 
 ### Synopsis
 
@@ -83,7 +84,7 @@ Any interest of contribution is welcome. Feel free to send a PR, report a bug, o
 
 ### Development
 
-- Python 3.6+ is required.
+- Python 3.12+ is required.
 - Install [poetry](https://python-poetry.org/docs/#installation) as a dependency manager.
 - Install dependencies by running ```poetry shell && poetry install```
 - Run and debug your changes by running ```poetry run python syncshell```
