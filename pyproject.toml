@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "syncshell"
-version = "v1.0.8"
+version = "v1.1.0"
 description = "Keep your machine's shell history synchronized"
 license = "MIT"
 authors = ["Masoud Ghorbani <masoudghorbani@pm.me>"]
