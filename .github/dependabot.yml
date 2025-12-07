@@ -6,8 +6,6 @@ updates:
       interval: "monthly"
       time: "09:00"
       day: "sunday"
-    reviewers:
-      - "msudgh"
     versioning-strategy: increase
     allow:
       - dependency-type: "production"

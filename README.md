@@ -1,24 +1,6 @@
 # SyncShell
-<!-- License -->
-<a href="https://mit-license.org/msudgh">
-  <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg"
-    alt="MIT License" />
-</a>
-<!-- Build Status -->
-<a href="https://github.com/msudgh/syncshell/actions/workflows/tests.yaml">
-  <img src="https://github.com/msudgh/syncshell/actions/workflows/tests.yaml/badge.svg?branch=main"
-    alt="Build Status" />
-</a>
-<!-- Releases -->
-<a href="https://github.com/msudgh/syncshell/releases">
-  <img src="https://img.shields.io/github/release/msudgh/syncshell.svg"
-    alt="PyPi" />
-</a>
-<!-- PyPi -->
-<a href="https://pypi.org/project/syncshell/">
-  <img src="https://img.shields.io/pypi/v/syncshell.svg"
-    alt="PyPi" />
-</a>
+
+[![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://mit-license.org/masoudgs) [![Build Status](https://github.com/masoudgs/syncshell/actions/workflows/tests.yaml/badge.svg?branch=main)](https://github.com/masoudgs/syncshell/actions/workflows/tests.yaml) [![PyPi](https://img.shields.io/github/release/masoudgs/syncshell.svg)](https://github.com/masoudgs/syncshell/releases) [![PyPi](https://img.shields.io/pypi/v/syncshell.svg)](https://pypi.org/project/syncshell/)
 
 SyncShell as a simple and secure tool allows to synchronize machine's shell history across devices. It's built on top of Github Gist and written in Python (CLI). With SyncShell, you no longer have to worry about manually syncing your office and home machine's shell history and let continue where the terminal session left.
 
@@ -30,13 +12,15 @@ SyncShell as a simple and secure tool allows to synchronize machine's shell hist
 - Easy to install and use
 
 ## Installation
+
 To install SyncShell, simply run the following command:
 
 ```bash
-$ pip install syncshell
+pip install syncshell
 ```
 
 ## Usage
+
 To use SyncShell, It first needs to set up a Github token key by following these steps:
 
 1. Open [**Github personal access tokens**](https://github.com/settings/tokens) page, [**Generate a new token**](https://github.com/settings/tokens/new) with `gist` scope feature.
@@ -45,15 +29,14 @@ To use SyncShell, It first needs to set up a Github token key by following these
 Once finished, try to upload shell history by the following command:
 
 ```bash
-$ syncshell upload
+syncshell upload
 ```
 
 After uploading, the download command lets to sync and pull changes on the other machines:
 
 ```bash
-$ syncshell download
+syncshell download
 ```
-
 
 ### Synopsis
 
@@ -83,7 +66,7 @@ Any interest of contribution is welcome. Feel free to send a PR, report a bug, o
 
 ### Development
 
-- Python 3.6+ is required.
+- Python 3.12+ is required.
 - Install [poetry](https://python-poetry.org/docs/#installation) as a dependency manager.
 - Install dependencies by running ```poetry shell && poetry install```
 - Run and debug your changes by running ```poetry run python syncshell```
@@ -106,4 +89,4 @@ To contribute follow the below steps:
 
 ## License
 
-The code is licensed under the MIT License. Visit [LICENSE](https://github.com/msudgh/syncshell/blob/main/LICENSE) file for more information.
+The code is licensed under the MIT License. Visit [LICENSE](https://github.com/masoudgs/syncshell/blob/main/LICENSE) file for more information.
